@@ -28,11 +28,10 @@ app.post('/events', (req, res) => {
     post.comments.push({ id, content });
   }
 
-  console.log(posts);
 
   res.send({});
 });
 
 app.listen(4002, () => {
-  console.log('Listening on 4002');
+  console.log('Listening on 4002 with Query');
 });
